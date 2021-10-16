@@ -1,395 +1,377 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@200&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@200&display=swap");
 @font-face {
-    font-family: "CustomFont";
-    src: url("../fonts/thinoothin.otf");
+  font-family: "CustomFont";
+  src: url("../fonts/thinoothin.otf");
 }
-
 /* Variables */
-:root{
-
-    --main-color: #14D9C1;
-    --black-color: #0C0B0B;
-    --white-color: #FFF;
-    --yoga-color: #55DFB6;
-    --revista-color: #00BCD4;
-    --nike-color: #BD89CD;
-
-    --font-secondary: "CustomFont", sans-serif;
-    --font-main: "Noto Sans", sans-serif;
-    
+:root {
+  --main-color: #14D9C1;
+  --black-color: #0C0B0B;
+  --white-color: #FFF;
+  --yoga-color: #55DFB6;
+  --revista-color: #00BCD4;
+  --nike-color: #BD89CD;
+  --font-secondary: "CustomFont", sans-serif;
+  --font-main: "Noto Sans", sans-serif;
 }
-
 
 html {
-    line-height: 1.5em;
-    -webkit-text-size-adjust: 100%;
-    scroll-behavior: smooth;
+  line-height: 1.5em;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
-body{
-    font-family: var(--font-main);
+body {
+  font-family: var(--font-main);
 }
 
 main {
-    display: block;
+  display: block;
 }
 
-ul{
-    margin-bottom: 0;
+ul {
+  margin-bottom: 0;
 }
 
-.btn{
-    display:flex;
-    justify-content: center;
-    padding: 20px 55px;
-    border: 2px solid var(--main-color);
-    border-radius: 30px;
-    color: var(--main-color);
-    font-size: 24px;
-}
-
-
-/* navbar */
-
-nav.navbar{
-    background: var(--white-color);
-    box-shadow: 0px 1px 8px rgba(129, 122, 122, 0.45);
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-}
-
-
-.navbar-light a.logo{
-    color: var(--main-color);
-    font-family: var(--font-secondary);
-    font-size: 32px;   
-}
-@media only screen and (min-width: 768px) {
-    .navbar-light a.logo{
-        font-size: 42px;
-    }
-}
-
-.menu-list {
-    margin-left: auto;
-}
-
-.menu-list li{
-    font-size: 22px;
-}
-
-.menu-list > li > a.nav-link{
-    color: var(--black-color) !important;
-    text-decoration: none;
-}
-
-.menu-list li a.nav-link:hover{
-    color: var(--main-color) !important;
-    transition: all 0.3s ease;
-}
-
-
-/* present */
-
-.container-present{
-    padding-top: 10em;
-    margin-bottom: 145px;
-    
-}
-
-.img-present {
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-    padding: 80px;
-}
-.img-present img{
-    clip-path: circle(50% at 50% 50%);
-    width: 230px;
-    height: 230px;
-
-}
-
-.info-present {
-    width: 70%;
-    align-items: center;
-    padding: 80px;
-}
-
-.info-present h1{
-    color: var(--main-color)
-}
-
-.info-present :is(h1, h2, p){
-    margin-bottom: 40px;
-}
-
-.info-present button{
-    background: var(--white-color);
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 20px 55px;
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+  color: var(--main-color);
+  font-size: 24px;
 }
 
 .bubble-btn {
-    color: var(--main-color);
-    overflow: hidden;
-    z-index: 1;
-    position: relative;
+  color: var(--main-color);
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
 }
 
 .bubble-btn span {
-    position: absolute;
-    width: 35%;
-    height: 100%;
-    background-color: var(--main-color);
-    transform: translateY(150%);
-    border-radius: 50%;
-    left: calc((var(--n) - 1) * 25%);
-    transition: 0.5s;
-    transition-delay: calc((var(--n) - 1) * 0.1s);
-    z-index: -1;
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  background-color: var(--main-color);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
 }
 
 .bubble-btn:hover {
-    color: var(--white-color);
-    cursor: pointer;
+  color: var(--white-color);
+  cursor: pointer;
 }
 
 .bubble-btn:hover span {
-    transform: translateY(0) scale(2);
+  transform: translateY(0) scale(2);
 }
 
 .bubble-btn span:nth-child(1) {
-    --n: 1;
+  --n: 1;
 }
 
 .bubble-btn span:nth-child(2) {
-    --n: 2;
+  --n: 2;
 }
 
 .bubble-btn span:nth-child(3) {
-    --n: 3;
+  --n: 3;
 }
+
 .bubble-btn span:nth-child(4) {
-    --n: 4;
+  --n: 4;
 }
 
-.contacto-btn{
-    width: 35%;
-    text-decoration: none;
+.contacto-btn {
+  width: 35%;
+  text-decoration: none;
 }
 
+/* navbar */
+nav.navbar {
+  background: var(--white-color);
+  box-shadow: 0px 1px 8px rgba(129, 122, 122, 0.45);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-light a.logo {
+  color: var(--main-color);
+  font-family: var(--font-secondary);
+  font-size: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-light a.logo {
+    font-size: 42px;
+  }
+}
+.menu-list {
+  margin-left: auto;
+}
+
+.menu-list li {
+  font-size: 22px;
+}
+
+.menu-list > li > a.nav-link {
+  color: var(--black-color) !important;
+  text-decoration: none;
+}
+
+.menu-list li a.nav-link:hover {
+  color: var(--main-color) !important;
+  transition: all 0.3s ease;
+}
+
+/* present */
+.container-present {
+  padding-top: 10em;
+  margin-bottom: 145px;
+}
+
+.img-present {
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+.img-present img {
+  clip-path: circle(50% at 50% 50%);
+  width: 230px;
+  height: 230px;
+}
+
+.info-present {
+  width: 70%;
+  align-items: center;
+  padding: 80px;
+}
+
+.info-present h1 {
+  color: var(--main-color);
+}
+
+.info-present :is(h1, h2, p) {
+  margin-bottom: 40px;
+}
+
+.info-present button {
+  background: var(--white-color);
+}
 
 /* main */
-
-.projects{
-    display: block;
+.projects {
+  display: block;
 }
 
-.project-container{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 480px;
-    padding:1em 3em;
-    margin-bottom: 70px;
-
+.project-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 480px;
+  padding: 1em 3em;
+  margin-bottom: 70px;
 }
 
-.projects > h2.title{
-    color: var(--main-color);
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 36px;
+.projects > h2.title {
+  color: var(--main-color);
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 36px;
 }
 
-.yoga-container{
-    background-color: var(--yoga-color);
+.yoga-container {
+  background-color: var(--yoga-color);
 }
 
-.yoga-info, .yoga-img{
-    width: 50%;
+.yoga-info, .yoga-img {
+  width: 50%;
 }
 
-.yoga-img img{
-    width: 100%;
+.yoga-img img {
+  width: 100%;
 }
 
-.yoga-info > .logo{
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 40px;
-
+.yoga-info > .logo {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 40px;
 }
 
 .yoga-info > .logo > h3 {
-    color:var(--white-color);
-    font-size: 48px;
-    position: relative;
-    top: -15px;
-}
-      
-.yoga-info > p{
-    color: var(--white-color);
-    font-size: 24px;
-    margin-bottom: 60px;
-    
+  color: var(--white-color);
+  font-size: 48px;
+  position: relative;
+  top: -15px;
 }
 
-.yoga-btn{
-    background: transparent;
-    border-color: var(--white-color);
-    color: var(--white-color)
+.yoga-info > p {
+  color: var(--white-color);
+  font-size: 24px;
+  margin-bottom: 60px;
 }
 
-.yoga-btn:hover{
-    background-color: var(--white-color);
-    border-color: var(--white-color);
-    color: var(--yoga-color);
-    transition: all 0.3s ease;
+.yoga-btn {
+  background: transparent;
+  border-color: var(--white-color);
+  color: var(--white-color);
 }
 
-.yoga-btn a, .nike-btn a, .revista-btn a{
-    text-decoration: none;
-    color: inherit;
+.yoga-btn:hover {
+  background-color: var(--white-color);
+  border-color: var(--white-color);
+  color: var(--yoga-color);
+  transition: all 0.3s ease;
 }
 
-.revista-container{
-
-    background-color: var(--revista-color);
-
+.yoga-btn a, .nike-btn a, .revista-btn a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.revista-info h3{ 
-    color: var(--white-color);
-    font-size: 40px;
-    margin-bottom: 60px;
+.revista-container {
+  background-color: var(--revista-color);
 }
 
-.revista-btn{
-    background: transparent;
-    border-color: var(--white-color);
-    color: var(--white-color)
+.revista-info h3 {
+  color: var(--white-color);
+  font-size: 40px;
+  margin-bottom: 60px;
 }
 
-.revista-btn:hover{
-    background-color: var(--white-color);
-    border-color: var(--white-color);
-    color: var(--revista-color);
-    transition: all 0.3s ease;
+.revista-btn {
+  background: transparent;
+  border-color: var(--white-color);
+  color: var(--white-color);
 }
 
-.revista-info{
-    width: 40%;
+.revista-btn:hover {
+  background-color: var(--white-color);
+  border-color: var(--white-color);
+  color: var(--revista-color);
+  transition: all 0.3s ease;
 }
 
-.revista-img{
-    width: 60%;
-    
+.revista-info {
+  width: 40%;
 }
 
-.nike-container{
-    background-color: var(--nike-color);
-
-}
-.nike-info h3{ 
-    color: var(--white-color);
-    font-size: 40px;
-    margin-bottom: 60px;
+.revista-img {
+  width: 60%;
 }
 
-.nike-btn{
-    background: transparent;
-    border-color: var(--white-color);
-    color: var(--white-color)
-}
-.nike-btn:hover{
-    background-color: var(--white-color);
-    border-color: var(--white-color);
-    color: var(--nike-color);
-    transition: all 0.3s ease;
+.nike-container {
+  background-color: var(--nike-color);
 }
 
-.nike-info .logo img{
-    margin-bottom: 60px;
+.nike-info h3 {
+  color: var(--white-color);
+  font-size: 40px;
+  margin-bottom: 60px;
 }
 
-
-.nike-info{
-    width: 50%;
+.nike-btn {
+  background: transparent;
+  border-color: var(--white-color);
+  color: var(--white-color);
 }
 
-.nike-img{
-    width: 50%;
+.nike-btn:hover {
+  background-color: var(--white-color);
+  border-color: var(--white-color);
+  color: var(--nike-color);
+  transition: all 0.3s ease;
 }
 
-.sobremi-info h3{
-    color: var(--main-color);
-    font-size: 36px;
-    align-items: center;
-    margin-bottom: 40px;
+.nike-info .logo img {
+  margin-bottom: 60px;
 }
 
+.nike-info {
+  width: 50%;
+}
+
+.nike-img {
+  width: 50%;
+}
+
+.sobremi-info h3 {
+  color: var(--main-color);
+  font-size: 36px;
+  align-items: center;
+  margin-bottom: 40px;
+}
 
 .sobremi-img, .sobremi-info {
-    justify-content: center;
-    align-items: center;
-    padding: 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
 }
 
-.footer-container{
-    width: 100%;
-    background-color: var(--black-color);
-    height: 380px;
-    padding: 60px;
+.footer-container {
+  width: 100%;
+  background-color: var(--black-color);
+  height: 380px;
+  padding: 60px;
 }
 
-.footer{
-    display: flex;
-    align-items: center;
-}
-.footer .contacto-info{
-    width: 50%;
-}
-.contacto-info h3{
-    color:var(--white-color);
-    font-size: 18px;
-    align-items: center;
-    margin-bottom: 40px;
+.footer {
+  display: flex;
+  align-items: center;
 }
 
-.contacto-info p{
-    margin-bottom: 40px;
+.footer .contacto-info {
+  width: 50%;
 }
 
-.contacto-info a{
-    color:var(--white-color);
-    font-size: 24px;
-    align-items: center;
+.contacto-info h3 {
+  color: var(--white-color);
+  font-size: 18px;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.footer .logos{
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
+.contacto-info p {
+  margin-bottom: 40px;
 }
 
-
-.medium-img a,.linkedin-img a   {
-    color: var(--white-color);
-    font-size: 20px;
-    text-decoration: none;
+.contacto-info a {
+  color: var(--white-color);
+  font-size: 24px;
+  align-items: center;
 }
 
-.copyright p{
-    color: var(--white-color);
-    text-align: center;
-    font-size: 14px;
+.footer .logos {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
 }
+
+.medium-img a, .linkedin-img a {
+  color: var(--white-color);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.copyright p {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */

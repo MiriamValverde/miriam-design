@@ -1,0 +1,49 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@200&display=swap');
+
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("../fonts/thinoothin.otf");
+}
+
+/* Variables */
+:root{
+
+    --main-color: #14D9C1;
+    --black-color: #0C0B0B;
+    --white-color: #FFF;
+    --yoga-color: #55DFB6;
+    --revista-color: #00BCD4;
+    --nike-color: #BD89CD;
+
+    --font-secondary: "CustomFont", sans-serif;
+    --font-main: "Noto Sans", sans-serif;
+    
+}
+
+
+html {
+    line-height: 1.5em;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-main);
+}
+
+main {
+    display: block;
+}
+
+ul{
+    margin-bottom: 0;
+}

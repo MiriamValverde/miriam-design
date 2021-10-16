@@ -1,0 +1,50 @@
+
+.footer-container{
+    width: 100%;
+    background-color: var(--black-color);
+    height: 380px;
+    padding: 60px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+}
+.footer .contacto-info{
+    width: 50%;
+}
+.contacto-info h3{
+    color:var(--white-color);
+    font-size: 18px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contacto-info p{
+    margin-bottom: 40px;
+}
+
+.contacto-info a{
+    color:var(--white-color);
+    font-size: 24px;
+    align-items: center;
+}
+
+.footer .logos{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+
+.medium-img a,.linkedin-img a   {
+    color: var(--white-color);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.copyright p{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 14px;
+}
