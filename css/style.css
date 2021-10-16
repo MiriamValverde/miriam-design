@@ -42,6 +42,9 @@ main {
     display: block;
 }
 
+ul{
+    margin-bottom: 0;
+}
 
 .btn{
     display:flex;
@@ -61,42 +64,36 @@ nav.navbar{
     box-shadow: 0px 1px 8px rgba(129, 122, 122, 0.45);
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 100;
 }
 
-div.nav-container{
-    padding: 30px;
-    justify-content: space-between;
-    align-items: center;
-}
 
-nav.navbar a{
-    text-decoration: none;
-
-}
-
-a.logo{
+.navbar-light a.logo{
     color: var(--main-color);
     font-family: var(--font-secondary);
-    font-size: 42px;
+    font-size: 32px;   
+}
+@media only screen and (min-width: 768px) {
+    .navbar-light a.logo{
+        font-size: 42px;
+    }
 }
 
 .menu-list {
-    list-style: none;
+    margin-left: auto;
 }
 
 .menu-list li{
-    display: inline-block;
-    margin-left: 25px;
     font-size: 22px;
 }
 
-.menu-list li a{
-    color: var(--black-color);
+.menu-list > li > a.nav-link{
+    color: var(--black-color) !important;
+    text-decoration: none;
 }
 
-.menu-list li a:hover{
-    color: var(--main-color);
+.menu-list li a.nav-link:hover{
+    color: var(--main-color) !important;
     transition: all 0.3s ease;
 }
 
@@ -138,7 +135,6 @@ a.logo{
 
 .info-present button{
     background: var(--white-color);
-   
 }
 
 .bubble-btn {
