@@ -1,157 +1,168 @@
-
 /* main */
 
-.projects{
-    display: block;
-}
+.projects {
+  display: block;
 
-.project-container{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 480px;
-    padding:1em 3em;
-    margin-bottom: 70px;
-
-}
-
-.projects > h2.title{
+  h2.title {
     color: var(--main-color);
     font-size: 36px;
     text-align: center;
     margin-bottom: 36px;
-}
+  }
 
-.yoga-container{
-    background-color: var(--yoga-color);
-}
+  .project-container {
+    min-height: 480px;
+    padding: 1em 3em;
+    margin-bottom: 70px;
+    border-radius: 15px;
+  }
 
-.yoga-info, .yoga-img{
-    width: 50%;
-}
-
-.yoga-img img{
-    width: 100%;
-}
-
-.yoga-info > .logo{
+  .more-info {
+    align-items: center;
     display: flex;
-    align-items: baseline;
-    margin-bottom: 40px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
+    @media (min-width: 768px) {
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 405px;
+    }
+  }
 }
 
-.yoga-info > .logo > h3 {
-    color:var(--white-color);
-    font-size: 48px;
-    position: relative;
-    top: -15px;
-}
-      
-.yoga-info > p{
+.yoga-container {
+  background-color: var(--yoga-color);
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    & > h3 {
+      color: var(--white-color);
+      font-size: 36px;
+      position: relative;
+
+      @media (min-width: 768px) {
+        font-size: 48px;
+      }
+    }
+  }
+
+  .yoga-info p {
     color: var(--white-color);
     font-size: 24px;
-    margin-bottom: 60px;
-    
-}
-
-.yoga-btn{
-    background: transparent;
-    border-color: var(--white-color);
-    color: var(--white-color)
-}
-
-.yoga-btn:hover{
-    background-color: var(--white-color);
-    border-color: var(--white-color);
-    color: var(--yoga-color);
-    transition: all 0.3s ease;
-}
-
-.yoga-btn a, .nike-btn a, .revista-btn a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.revista-container{
-
-    background-color: var(--revista-color);
-
-}
-
-.revista-info h3{ 
-    color: var(--white-color);
-    font-size: 40px;
-    margin-bottom: 60px;
-}
-
-.revista-btn{
-    background: transparent;
-    border-color: var(--white-color);
-    color: var(--white-color)
-}
-
-.revista-btn:hover{
-    background-color: var(--white-color);
-    border-color: var(--white-color);
-    color: var(--revista-color);
-    transition: all 0.3s ease;
-}
-
-.revista-info{
-    width: 40%;
-}
-
-.revista-img{
-    width: 60%;
-    
-}
-
-.nike-container{
-    background-color: var(--nike-color);
-
-}
-.nike-info h3{ 
-    color: var(--white-color);
-    font-size: 40px;
-    margin-bottom: 60px;
-}
-
-.nike-btn{
-    background: transparent;
-    border-color: var(--white-color);
-    color: var(--white-color)
-}
-.nike-btn:hover{
-    background-color: var(--white-color);
-    border-color: var(--white-color);
-    color: var(--nike-color);
-    transition: all 0.3s ease;
-}
-
-.nike-info .logo img{
-    margin-bottom: 60px;
-}
-
-
-.nike-info{
-    width: 50%;
-}
-
-.nike-img{
-    width: 50%;
-}
-
-.sobremi-info h3{
-    color: var(--main-color);
-    font-size: 36px;
-    align-items: center;
     margin-bottom: 40px;
+  }
+
+  .yoga-img img {
+    width: 100%;
+  }
+
+  .yoga-btn a {
+    background: transparent;
+    border-color: var(--white-color);
+    color: var(--white-color);
+    width: 100%;
+
+    @media (min-width: 1400px) {
+      width: 50%;
+    }
+
+    &:hover {
+      background-color: var(--white-color);
+      border-color: var(--white-color);
+      color: var(--yoga-color);
+      transition: all 0.3s ease;
+    }
+
+    &:focus{
+       box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
+    }
+  }
 }
 
+.yoga-btn a,
+.nike-btn a,
+.revista-btn a {
+  text-decoration: none;
+  color: inherit;
+}
 
-.sobremi-img, .sobremi-info {
-    justify-content: center;
-    align-items: center;
-    padding: 80px;
+.revista-container {
+  background-color: var(--revista-color);
+}
+
+.revista-info h3 {
+  color: var(--white-color);
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.revista-btn {
+  background: transparent;
+  border-color: var(--white-color);
+  color: var(--white-color);
+}
+
+.revista-btn:hover {
+  background-color: var(--white-color);
+  border-color: var(--white-color);
+  color: var(--revista-color);
+  transition: all 0.3s ease;
+}
+
+.revista-info {
+  width: 40%;
+}
+
+.revista-img {
+  width: 60%;
+}
+
+.nike-container {
+  background-color: var(--nike-color);
+}
+.nike-info h3 {
+  color: var(--white-color);
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.nike-btn {
+  background: transparent;
+  border-color: var(--white-color);
+  color: var(--white-color);
+}
+.nike-btn:hover {
+  background-color: var(--white-color);
+  border-color: var(--white-color);
+  color: var(--nike-color);
+  transition: all 0.3s ease;
+}
+
+.nike-info .logo img {
+  margin-bottom: 60px;
+}
+
+.nike-info {
+  width: 50%;
+}
+
+.nike-img {
+  width: 50%;
+}
+
+.sobremi-info h3 {
+  color: var(--main-color);
+  font-size: 36px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.sobremi-img,
+.sobremi-info {
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
 }
