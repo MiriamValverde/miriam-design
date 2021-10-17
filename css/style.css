@@ -95,7 +95,7 @@ ul {
 }
 
 .contacto-btn {
-  width: 35%;
+  width: 55%;
   text-decoration: none;
 }
 
@@ -113,12 +113,12 @@ nav.navbar {
   font-family: var(--font-secondary);
   font-size: 32px;
 }
-
 @media only screen and (min-width: 768px) {
   .navbar-light a.logo {
     font-size: 42px;
   }
 }
+
 .menu-list {
   margin-left: auto;
 }
@@ -139,38 +139,34 @@ nav.navbar {
 
 /* present */
 .container-present {
-  padding-top: 10em;
-  margin-bottom: 145px;
+  padding-top: 7rem;
 }
-
-.img-present {
-  width: 30%;
-  justify-content: center;
-  align-items: center;
-  padding: 80px;
+@media (min-width: 768px) {
+  .container-present {
+    padding-top: 4rem;
+  }
 }
-
-.img-present img {
+.container-present .img-present img {
   clip-path: circle(50% at 50% 50%);
-  width: 230px;
-  height: 230px;
+  width: 250px;
+  height: 250px;
 }
-
-.info-present {
-  width: 70%;
+.container-present .info-present {
   align-items: center;
-  padding: 80px;
+  padding: 20px;
 }
-
-.info-present h1 {
+@media (min-width: 768px) {
+  .container-present .info-present {
+    padding: 80px;
+  }
+}
+.container-present .info-present h1 {
   color: var(--main-color);
 }
-
-.info-present :is(h1, h2, p) {
+.container-present .info-present :is(h1, h2, p) {
   margin-bottom: 40px;
 }
-
-.info-present button {
+.container-present .info-present button {
   background: var(--white-color);
 }
 

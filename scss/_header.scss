@@ -1,79 +1,74 @@
 /* navbar */
 
-nav.navbar{
-    background: var(--white-color);
-    box-shadow: 0px 1px 8px rgba(129, 122, 122, 0.45);
-    position: fixed;
-    width: 100%;
-    z-index: 100;
+nav.navbar {
+  background: var(--white-color);
+  box-shadow: 0px 1px 8px rgba(129, 122, 122, 0.45);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
+.navbar-light a.logo {
+  color: var(--main-color);
+  font-family: var(--font-secondary);
+  font-size: 32px;
 
-.navbar-light a.logo{
-    color: var(--main-color);
-    font-family: var(--font-secondary);
-    font-size: 32px;   
-}
-@media only screen and (min-width: 768px) {
-    .navbar-light a.logo{
-        font-size: 42px;
-    }
+  @media only screen and (min-width: 768px) {
+    font-size: 42px;
+  }
 }
 
 .menu-list {
-    margin-left: auto;
+  margin-left: auto;
 }
 
-.menu-list li{
-    font-size: 22px;
+.menu-list li {
+  font-size: 22px;
 }
 
-.menu-list > li > a.nav-link{
-    color: var(--black-color) !important;
-    text-decoration: none;
+.menu-list > li > a.nav-link {
+  color: var(--black-color) !important;
+  text-decoration: none;
 }
 
-.menu-list li a.nav-link:hover{
-    color: var(--main-color) !important;
-    transition: all 0.3s ease;
+.menu-list li a.nav-link:hover {
+  color: var(--main-color) !important;
+  transition: all 0.3s ease;
 }
-
 
 /* present */
 
-.container-present{
-    padding-top: 10em;
-    margin-bottom: 145px;
-    
-}
+.container-present {
+  padding-top: 7rem;
 
-.img-present {
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-    padding: 80px;
-}
-.img-present img{
+  @media (min-width: 768px) {
+    padding-top: 4rem;
+  }
+
+  .img-present img {
     clip-path: circle(50% at 50% 50%);
-    width: 230px;
-    height: 230px;
+    width: 250px;
+    height: 250px;
+  }
 
-}
-
-.info-present {
-    width: 70%;
+  .info-present {
     align-items: center;
-    padding: 80px;
-}
+    padding: 20px;
 
-.info-present h1{
-    color: var(--main-color)
-}
+    @media (min-width: 768px) {
+      padding: 80px;
+    }
+  }
 
-.info-present :is(h1, h2, p){
+  .info-present h1 {
+    color: var(--main-color);
+  }
+
+  .info-present :is(h1, h2, p) {
     margin-bottom: 40px;
-}
+  }
 
-.info-present button{
+  .info-present button {
     background: var(--white-color);
+  }
 }
