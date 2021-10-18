@@ -144,8 +144,9 @@
     }
 
     .cv-link{
-      font-size: 18px;
-
+      font-size: 22px;
+      font-family: var(--font-secondary);
+      font-weight: bold;
       &:hover{
         color: var(--accent-color);
         transition: all 0.3s ease;

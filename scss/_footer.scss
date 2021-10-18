@@ -1,50 +1,90 @@
-
-.footer-container{
-    width: 100%;
-    background-color: var(--black-color);
-    height: 380px;
-    padding: 60px;
+.footer-container {
+  background-color: var(--black-color);
+  padding: 60px;
 }
 
-.footer{
-    display: flex;
-    align-items: center;
-}
-.footer .contacto-info{
-    width: 50%;
-}
-.contacto-info h3{
-    color:var(--white-color);
-    font-size: 18px;
-    align-items: center;
-    margin-bottom: 40px;
-}
+.contacto-info {
+  p {
+    color: var(--gray-color);
+    font-size: 16px;
+  }
 
-.contacto-info p{
-    margin-bottom: 40px;
-}
-
-.contacto-info a{
-    color:var(--white-color);
-    font-size: 24px;
-    align-items: center;
-}
-
-.footer .logos{
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-}
-
-
-.medium-img a,.linkedin-img a   {
-    color: var(--white-color);
+  a.link-contact {
+    color: var(--main-color);
     font-size: 20px;
-    text-decoration: none;
+    font-weight: 100;
+    &:hover {
+      color: var(--accent-color);
+      transition: all 0.7s ease;
+    }
+  }
 }
 
-.copyright p{
-    color: var(--white-color);
+.logos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  .btn-logo {
     text-align: center;
-    font-size: 14px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: var(--gray-color-dark);
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px -5px var(--gray-color-dark);
+    color: var(--main-color);
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 125%;
+      height: 120%;
+      background-color: var(--main-color);
+      transform: rotate(45deg);
+      left: -110%;
+      top: 90%;
+    }
+
+    &:hover::before {
+      animation: hover 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
+
+    &:hover i {
+      transform: scale(1.3);
+      color: var(--black-color);
+    }
+
+    & > i {
+      line-height: 80px;
+      font-size: 1.625em;
+      transition: 0.2s linear;
+    }
+
+    @keyframes hover {
+      0% {
+        top: -110%;
+        left: 90%;
+      }
+      50% {
+        top: 10%;
+        left: -30%;
+      }
+      100% {
+        top: -10%;
+        left: -10%;
+      }
+    }
+  }
+}
+
+.copyright p {
+  color: var(--gray-color);
+  text-align: center;
+  font-size: 14px;
 }
