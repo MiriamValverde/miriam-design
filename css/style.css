@@ -180,64 +180,93 @@ nav.navbar {
   margin-bottom: 70px;
   border-radius: 15px;
 }
-.projects .more-info {
+.projects .project-container .project-head {
+  display: flex;
+  align-items: center;
+}
+.projects .project-container .project-head > h3 {
+  color: var(--white-color);
+  font-size: 36px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .projects .project-container .project-head > h3 {
+    font-size: 48px;
+  }
+}
+.projects .project-container .project-head > img {
+  width: 115px;
+  margin-right: 10px;
+}
+.projects .project-container .project-info .more-info {
   align-items: center;
   display: flex;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
-  .projects .more-info {
+  .projects .project-container .project-info .more-info {
     margin-top: 0;
     margin-bottom: 0;
     height: 405px;
   }
 }
-
-.yoga-container {
-  background-color: var(--yoga-color);
-}
-.yoga-container .logo {
-  display: flex;
-  align-items: center;
-}
-.yoga-container .logo > h3 {
-  color: var(--white-color);
-  font-size: 36px;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .yoga-container .logo > h3 {
-    font-size: 48px;
-  }
-}
-.yoga-container .yoga-info p {
+.projects .project-container .project-info .more-info p {
   color: var(--white-color);
   font-size: 24px;
   margin-bottom: 40px;
 }
-.yoga-container .yoga-img img {
+.projects .project-container .project-info .project-img img {
   width: 100%;
+  height: auto;
 }
-.yoga-container .yoga-btn a {
+@media (min-width: 768px) {
+  .projects .project-container .project-info .project-img img {
+    height: 440px;
+  }
+}
+.projects .project-container .project-info .project-img.auto-height img {
+  height: auto;
+}
+.projects .project-container .project-btn a {
   background: transparent;
   border-color: var(--white-color);
   color: var(--white-color);
   width: 100%;
 }
 @media (min-width: 1400px) {
-  .yoga-container .yoga-btn a {
+  .projects .project-container .project-btn a {
     width: 50%;
   }
 }
-.yoga-container .yoga-btn a:hover {
+.projects .project-container .project-btn a:hover {
   background-color: var(--white-color);
   border-color: var(--white-color);
-  color: var(--yoga-color);
   transition: all 0.3s ease;
 }
-.yoga-container .yoga-btn a:focus {
+.projects .project-container .project-btn a:focus {
   box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+.yoga-container {
+  background-color: var(--yoga-color);
+}
+.yoga-container .yoga-btn a:hover {
+  color: var(--yoga-color);
+}
+
+.nike-container {
+  background-color: var(--nike-color);
+}
+.nike-container .nike-btn a:hover {
+  color: var(--nike-color);
+}
+
+.revista-container {
+  background-color: var(--revista-color);
+}
+.revista-container .revista-btn a:hover {
+  color: var(--revista-color);
 }
 
 .yoga-btn a,
@@ -245,72 +274,6 @@ nav.navbar {
 .revista-btn a {
   text-decoration: none;
   color: inherit;
-}
-
-.revista-container {
-  background-color: var(--revista-color);
-}
-
-.revista-info h3 {
-  color: var(--white-color);
-  font-size: 40px;
-  margin-bottom: 60px;
-}
-
-.revista-btn {
-  background: transparent;
-  border-color: var(--white-color);
-  color: var(--white-color);
-}
-
-.revista-btn:hover {
-  background-color: var(--white-color);
-  border-color: var(--white-color);
-  color: var(--revista-color);
-  transition: all 0.3s ease;
-}
-
-.revista-info {
-  width: 40%;
-}
-
-.revista-img {
-  width: 60%;
-}
-
-.nike-container {
-  background-color: var(--nike-color);
-}
-
-.nike-info h3 {
-  color: var(--white-color);
-  font-size: 40px;
-  margin-bottom: 60px;
-}
-
-.nike-btn {
-  background: transparent;
-  border-color: var(--white-color);
-  color: var(--white-color);
-}
-
-.nike-btn:hover {
-  background-color: var(--white-color);
-  border-color: var(--white-color);
-  color: var(--nike-color);
-  transition: all 0.3s ease;
-}
-
-.nike-info .logo img {
-  margin-bottom: 60px;
-}
-
-.nike-info {
-  width: 50%;
-}
-
-.nike-img {
-  width: 50%;
 }
 
 .sobremi-info h3 {
