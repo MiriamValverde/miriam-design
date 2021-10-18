@@ -130,16 +130,38 @@
   color: inherit;
 }
 
-.sobremi-info h3 {
-  color: var(--main-color);
-  font-size: 36px;
-  align-items: center;
-  margin-bottom: 40px;
+.container-sobremi {
+
+  margin-bottom: 5rem;
+  .sobremi-info {
+    padding: 20px;
+
+    h3 {
+      color: var(--main-color);
+      font-size: 36px;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .cv-link{
+      font-size: 18px;
+
+      &:hover{
+        color: var(--accent-color);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .sobremi-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 350px;
+    }
+  }
 }
 
-.sobremi-img,
-.sobremi-info {
-  justify-content: center;
-  align-items: center;
-  padding: 80px;
-}
+

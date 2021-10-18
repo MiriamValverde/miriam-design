@@ -17,6 +17,7 @@
     --yoga-color: #55DFB6;
     --revista-color: #00BCD4;
     --nike-color: #BD89CD;
+    --accent-color: #d863a7;
 
     --font-secondary: "CustomFont", sans-serif;
     --font-main: "Noto Sans", sans-serif;
@@ -41,4 +42,9 @@ main {
 
 ul{
     margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-color);
 }

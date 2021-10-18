@@ -11,6 +11,7 @@
   --yoga-color: #55DFB6;
   --revista-color: #00BCD4;
   --nike-color: #BD89CD;
+  --accent-color: #d863a7;
   --font-secondary: "CustomFont", sans-serif;
   --font-main: "Noto Sans", sans-serif;
 }
@@ -31,6 +32,11 @@ main {
 
 ul {
   margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
 }
 
 .btn {
@@ -276,18 +282,32 @@ nav.navbar {
   color: inherit;
 }
 
-.sobremi-info h3 {
+.container-sobremi {
+  margin-bottom: 5rem;
+}
+.container-sobremi .sobremi-info {
+  padding: 20px;
+}
+.container-sobremi .sobremi-info h3 {
   color: var(--main-color);
   font-size: 36px;
   align-items: center;
   margin-bottom: 40px;
 }
-
-.sobremi-img,
-.sobremi-info {
+.container-sobremi .sobremi-info .cv-link {
+  font-size: 18px;
+}
+.container-sobremi .sobremi-info .cv-link:hover {
+  color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+.container-sobremi .sobremi-img {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px;
+}
+.container-sobremi .sobremi-img img {
+  width: 350px;
 }
 
 .footer-container {
