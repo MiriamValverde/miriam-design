@@ -109,11 +109,18 @@ nav.navbar {
   width: 100%;
   z-index: 100;
 }
+nav.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
 
 .navbar-light a.logo {
   color: var(--main-color);
   font-family: var(--font-secondary);
   font-size: 32px;
+}
+.navbar-light a.logo:hover {
+  color: var(--accent-color);
+  transition: all 0.3s ease;
 }
 @media only screen and (min-width: 768px) {
   .navbar-light a.logo {
