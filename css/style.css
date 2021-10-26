@@ -156,9 +156,16 @@ nav.navbar .navbar-toggler:focus {
   }
 }
 .container-present .img-present img {
-  clip-path: circle(50% at 50% 50%);
-  width: 250px;
-  height: 250px;
+  position: relative;
+  top: 15px;
+  clip-path: circle(46% at 50% 43%);
+  width: 320px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .container-present .img-present img {
+    top: 40px;
+  }
 }
 .container-present .info-present {
   align-items: center;

@@ -7,7 +7,7 @@ nav.navbar {
   width: 100%;
   z-index: 100;
 
-  & .navbar-toggler:focus{
+  & .navbar-toggler:focus {
     box-shadow: none;
   }
 }
@@ -17,7 +17,7 @@ nav.navbar {
   font-family: var(--font-secondary);
   font-size: 32px;
 
-  &:hover{
+  &:hover {
     color: var(--accent-color);
     transition: all 0.3s ease;
   }
@@ -55,9 +55,14 @@ nav.navbar {
   }
 
   .img-present img {
-    clip-path: circle(50% at 50% 50%);
-    width: 250px;
-    height: 250px;
+    position: relative;
+    top: 15px;
+    clip-path: circle(46% at 50% 43%);
+    width: 320px;
+    height: auto;
+    @media (min-width: 768px) {
+      top: 40px;
+    }
   }
 
   .info-present {
